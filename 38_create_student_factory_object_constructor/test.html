@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Factory Example</title>
+</head>
+
+<body>
+
+    <!-- UI Elements -->
+    <label for="name">Name:</label>
+    <input type="text" id="name">
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" id="age">
+    <br>
+    <button id="createStudent">Create Student</button>
+
+    <script>
+        // Define Student Factory Object
+        class StudentFactory {
+            constructor() {
+                this.name = '';
+                this.age = 0;
+            }
+
+            createStudent(name, age) {
+                this.name = name;
+                this.age = age;
+                console.log('Student created:', this.name, this.age);
+            }
+        }
+
+        // Capture UI Elements
+        const nameInput = document.getElementById('name');
+        const ageInput = document.getElementById('age');
+        const createStudentButton = document.getElementById('createStudent');
+
+        // Instantiate Student Factory Object
+        const studentFactory = new StudentFactory();
+
+        // Add Event Listener to Button
+        createStudentButton.addEventListener('click', () => {
+            const name = nameInput.value;
+            const age = parseInt(ageInput.value, 10);
+
+            // Pass UI Values to Factory Object
+            studentFactory.createStudent(name, age);
+        });
+    </script>
+</body>
+
+</html>
