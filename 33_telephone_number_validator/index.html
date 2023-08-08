@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <div style="text-align: center; margin-top: 5%;">
+    <h3>It will validate your phone number and countrycode</h3>
+    <div>
+        <label for="countrycode">Country Code</label><br><br>
+        <input  id="countrycode" type="text"><br><br>
+    </div>
+
+    <div>
+        <label for="number">Phone Number</label><br><br>
+        <input id="phonenumber" type="text"><br><br>
+    </div>
+    
+    <div>
+        <button onclick="telephoneNumberValidator()">Check</button>
+    </div>
+
+    <div>
+       <h1 id="result"></h1>
+    </div>
+   </div>
+    <script src="fromUi.js"></script>
+</body>
+</html>
