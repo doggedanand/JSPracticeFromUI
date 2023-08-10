@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="text-align: center; margin-top: 5%;">
+    <!-- Add Recode Form Start  -->
+    <div class="container">
+        <div>
+            <label for="">Name</label>&nbsp;&nbsp;
+            <input type="text" name="" id="name">
+        </div><br>
+        <div>
+            <label for="">Age</label>&nbsp;&nbsp;
+            <input type="text" name="" id="age">
+        </div><br>
+        <div>
+            <label for="">Address</label>&nbsp;&nbsp;
+            <input type="text" name="" id="address">
+        </div><br>
+        <div>
+            <label for="">Country</label>&nbsp;&nbsp;
+            <input type="text" name="" id="country">
+        </div><br>
+        <div>
+            <label for="">Gender</label>&nbsp;&nbsp;
+            <input type="text" name="" id="gender">
+        </div><br><br>
+        <div>
+            <button onclick="createObject()">Add Object/Record</button>
+        </div>
+
+        <br><br><br><br>
+        <div>
+            <table id="table" class="recordList" style="width:auto">
+                <thead>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Address</th>
+                    <th>Country</th>
+                    <th>Gender</th>
+                    <th>Action</th>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <button onclick="compareRecord()">Compare Record</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="removeRecord()">Remove Record</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button onclick="openForm(); openUpdateForm(id)">Update Record</button>&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+    <!-- Add Record From End  -->
+
+    <br><br>
+    <!-- Update Form Start -->
+    <div class="form-popup" action="" id="updateForm">
+        <div>
+            <div>
+                <label for="">Name</label>&nbsp;&nbsp;
+                <input type="text" name="" id="updateName">
+            </div><br>
+            <div>
+                <label for="">Age</label>&nbsp;&nbsp;
+                <input type="text" name="" id="updateAge">
+            </div><br>
+            <div>
+                <label for="">Address</label>&nbsp;&nbsp;
+                <input type="text" name="" id="updateAddress">
+            </div><br>
+            <div>
+                <label for="">Country</label>&nbsp;&nbsp;
+                <input type="text" name="" id="updateCountry">
+            </div><br>
+            <div>
+                <label for="">Gender</label>&nbsp;&nbsp;
+                <input type="text" name="" id="updateGender">
+            </div><br><br>
+            <div>
+                <button onclick="updateRecord()">Update</button> &nbsp;
+                <button onclick="closeForm()">Close Form</button>
+            </div>
+        </div>
+    </div>
+    <!-- Update Form End  -->
+
+    <script src="app.js"></script>
+</body>
+
+</html>
